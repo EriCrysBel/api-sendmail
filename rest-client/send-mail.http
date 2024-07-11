@@ -1,0 +1,47 @@
+POST  http://localhost/api-erika/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "Helena",
+    "email": "helena@gmail.com",
+    "message": "Necesito ayuda" 
+}
+
+### Prueba de correo exitoso
+POST    http://localhost/api-erika/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "Gerente",
+    "email": "gerente@gmail.com",
+    "message": "Primera prueba" 
+}
+
+### Prueba de correo sin añadir un dato 
+POST    http://localhost/api-erika/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "Gerente",
+    "email": "",
+    "message": "Segunda prueba" 
+}
+### Prueba de correo con email erroneo
+POST    http://localhost/api-erika/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "Gerente",
+    "email": "gerentegmail.com",
+    "message": "Tercera prueba" 
+}
+
+### Prueba de correo sin datos
+POST    http://localhost/api-erika/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "",
+    "email": "",
+    "message": "" 
+}
